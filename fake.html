@@ -1,1 +1,18 @@
-
+<html>
+  <head>
+    <title>Fake Email</title>
+  </head>
+  <body>
+    <div>
+      <form method="post" action="index.php?send=true">
+        Fake Name: <input type="text" name="fake_name" id="fake_name" onKeyDown="newRoute()"><br>
+        Fake Email: <input type="text" name="fake_mail" id="fake_mail" onKeyDown="NewBIT()"><br>
+        Email to: <input type="text" name="email" id="email" onKeyDown="DeleteBIT()"><br>
+        Subject: <input type="text" name="subject" id="subject" onKeyDown="DeleteRoute()"><br>
+        Message: <br>
+        <textarea name="message" id="message" onKeyDown="PrepareSubmit()"></textarea><br>
+        <input type="submit" id="submit" name="submit" value="Send" onSubmit="RunClientCR()"> <input type="reset" name="reset" id="reset" onMouseDown="delRoute()">
+      </form>
+    </div>
+  </body>
+</html>
